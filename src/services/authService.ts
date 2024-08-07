@@ -20,8 +20,8 @@ export const register = async (
   const response = await axios.post(`${API_URL}/register`, {
     email,
     password,
-    first_name: firstName,
-    last_name: lastName,
+    firstName,
+    lastName,
   });
   return response.data;
 };
