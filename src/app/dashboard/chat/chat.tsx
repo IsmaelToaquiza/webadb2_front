@@ -27,7 +27,7 @@ const Chat = () => {
         setUsername(user.first_name + " " + user.last_name);
 
         // Establece la conexión de WebSocket con el token
-        const newSocket = io(`http://chat-service-production-44d7.up.railway.app/chat?token=${token}`);
+        const newSocket = io(`https://chat-service-production-44d7.up.railway.app/chat?token=${token}`);
         setSocket(newSocket);
 
         // Configura los manejadores de eventos del socket
