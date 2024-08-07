@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL = "https://api-gateway-production-9e17.up.railway.app/auth";
-
+// Cpometario de test
 export const login = async (email: string, password: string) => {
   const response = await axios.post(`${API_URL}/login`, { email, password });
   if (response.data.access_token) {
